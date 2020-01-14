@@ -2,14 +2,14 @@
 
 电脑端 / 手机端 地区选择插件，日期选择插件，时间选择插件
 
-[插件演示地址](https://fengfanv.github.io/c1/demo/index.html)
+[插件演示地址](https://fengfanv.github.io/c1/demo/index.html) | [BUG反馈](https://fengfanv.github.io/c1/demo/index.html)
 
 ### 使用方法
 
 ```javascript
 c1.init({
-  "type": "插件类型",
   "elementId": "触发器ID",
+  "type": "插件类型",
   "position": "显示位置编号"
 })
 ```
