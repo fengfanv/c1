@@ -51,6 +51,10 @@ body {
     padding: 20px 25px;
 }
 
+.ct li{
+    margin-bottom: 14px;
+}
+
 .version_date {
     color: #999;
 }

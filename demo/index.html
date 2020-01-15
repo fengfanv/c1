@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>c1 - 网页插件</title>
+    <title>c1 - JavaScript插件</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/index.css">
@@ -17,8 +17,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="header_content">
-                        <h1 class="marginBottom10">c1 - 网页插件</h1>
-                        <p class="marginBottom10 header_js">这是一款简单的JavaScript网页插件，插件功能含括地区选择插件，日期选择插件，时间选择插件。</p>
+                        <h1 class="marginBottom10">c1 - JavaScript插件</h1>
+                        <p class="marginBottom10 header_js">电脑端 / 手机端 地区选择插件，日期选择插件，时间选择插件。</p>
                         <a class="btn btn-default button" href="https://github.com/fengfanv/" role="button"
                             target="_black">关注我</a>
                     </div>
@@ -40,7 +40,15 @@
                         </div>
                     </div>
                     <div>
-                        <span class="min_header">2、使用地址选择插件</span>
+                        <span class="min_header">2、引入地址数据</span>
+                        <div class="code_mine">
+                            <p>
+                                <<span>script src="../js/addressData.js"</span>><<span>/script</span>>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="min_header">3、使用地址选择插件</span>
                         <div class="code_mine">
                             <p>
                                 <span>c1.init({</span>
@@ -64,7 +72,7 @@
                         </div>
                     </div>
                     <div>
-                        <span class="min_header">3、使用日期选择插件</span>
+                        <span class="min_header">4、使用日期选择插件</span>
                         <div class="code_mine">
                             <p>
                                 <span>正在开发中</span>
@@ -73,7 +81,7 @@
                         </div>
                     </div>
                     <div>
-                        <span class="min_header">4、使用时间选择插件</span>
+                        <span class="min_header">5、使用时间选择插件</span>
                         <div class="code_mine">
                             <p>
                                 <span>正在开发中</span>
@@ -91,6 +99,10 @@
                             <span>V1.0.0</span>
                             <span class="version_date">2019-12-04</span>
                         </li>
+                        <li>
+                            <span>V1.0.1</span>
+                            <span class="version_date">2020-01-15</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -98,12 +110,15 @@
     </div>
 
     </div>
+    <script src="../js/jquery.js"></script>
+	<script src="../js/addressData.js"></script>
     <script src="../js/c1.js"></script>
+	
     <script>
         c1.init({
             "type": "address", //类型
-            "element": "aaa", //绑定元素
-            "position": "auto" //显示位置auto显示在元素下方，bottom显示在屏幕下方
+            "elementId": "aaa", //绑定元素
+            "position": "1" //
         })
     </script>
 </body>
