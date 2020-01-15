@@ -1,10 +1,24 @@
-# c1 JavaScript插件
+# c1 - JavaScript插件
 
 电脑端 / 手机端 地区选择插件，日期选择插件，时间选择插件
 
 [插件演示地址](https://fengfanv.github.io/c1/demo/index.html) | [BUG反馈](https://fengfanv.github.io/c1/demo/index.html)
 
 ### 使用方法
+
+##### 1、引入插件
+
+```
+<script src="../js/c1.js"></script>
+```
+
+##### 2、引入地址数据(不使用地址选择插件可不引用)
+
+```
+<script src="../js/addressData.js"></script>
+```
+
+##### 3、使用地址选择插件
 
 ```javascript
 c1.init({
@@ -13,6 +27,19 @@ c1.init({
   "position": "显示位置编号"
 })
 ```
+
+##### 4、使用日期选择插件
+
+```javascript
+//正在开发中...
+```
+
+##### 5、使用时间选择插件
+
+```javascript
+//正在开发中...
+```
+
 ### 参数说明
 
 序号    |参数名    |参数含义    |值1    |值2    |值3
@@ -21,3 +48,64 @@ c1.init({
 2  |type  |使用插件的类型|address(地址选择器)|date(日期选择器)|time(时间选择器)
 3  |position|插件显示位置|1(触发器下方)|2(屏幕底部屏幕的一半)|
 4  |event  |-|-|-|-
+
+### 源码简述
+```
+;(function (win) {
+  //插件样式区
+  var styleContent = "...";
+  
+  //插件程序主体
+  var plugin = function (object) {
+    //...
+  }
+  
+  //插件原型
+  //地址插件地址数据
+  plugin.prototype.addressData = address_arr;
+  
+  //插件原型方法
+  //清空元素内元素
+  plugin.prototype.elementEmpty = function (element) {
+    //...
+  }
+  
+  //插件原型方法
+  //获取元素距离文档顶部的位置
+  plugin.prototype.getOffset = function (element) {
+    //...
+  }
+  
+  //插件原型方法
+  //地址插件生成必要的元素ID
+  plugin.prototype.addressCreateNumber = function () {
+    //...
+  }
+  
+  //插件原型方法
+  //创建地址插件
+  plugin.prototype.createAddress = function () {
+    //...
+  }
+  
+  //插件原型方法
+  //地址插件渲染已选显示区
+  plugin.prototype.addressRenderYx = function () {
+    //...
+  }
+  
+  //插件原型方法
+  //地址插件选择区域渲染
+  plugin.prototype.addressRenderXz = function () {
+    //...
+  }
+  
+  //插件初始化方法
+  plugin.init = function (initCs) {
+    //...
+  }
+  
+  //插件注册
+  win["c1"] = plugin;
+})(window)
+```
