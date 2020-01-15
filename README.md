@@ -55,47 +55,40 @@ c1.init({
   //插件样式区
   var styleContent = "...";
   
-  //插件程序主体
+  //插件程序主体方法
   var plugin = function (object) {
     //...
   }
   
-  //插件原型
   //地址插件地址数据
   plugin.prototype.addressData = address_arr;
   
-  //插件原型方法
-  //清空元素内元素
+  //清空元素内元素方法
   plugin.prototype.elementEmpty = function (element) {
     //...
   }
   
-  //插件原型方法
-  //获取元素距离文档顶部的位置
+  //获取元素距离文档顶部的位置方法
   plugin.prototype.getOffset = function (element) {
     //...
   }
   
-  //插件原型方法
-  //地址插件生成必要的元素ID
+  //地址插件生成必要的元素ID方法
   plugin.prototype.addressCreateNumber = function () {
     //...
   }
   
-  //插件原型方法
-  //创建地址插件
+  //创建地址插件方法
   plugin.prototype.createAddress = function () {
     //...
   }
   
-  //插件原型方法
-  //地址插件渲染已选显示区
+  //地址插件渲染已选显示区方法
   plugin.prototype.addressRenderYx = function () {
     //...
   }
   
-  //插件原型方法
-  //地址插件选择区域渲染
+  //地址插件选择区域渲染方法
   plugin.prototype.addressRenderXz = function () {
     //...
   }
