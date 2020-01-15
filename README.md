@@ -100,7 +100,7 @@ c1.init({
     //...
   }
   
-  //插件初始化方法
+  //插件使用初始化方法
   plugin.init = function (initCs) {
     //...
   }
