@@ -100,5 +100,6 @@ c1.init({
   
   //插件注册
   win["c1"] = plugin;
+  
 })(window);
 ```
