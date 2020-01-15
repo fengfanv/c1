@@ -49,7 +49,7 @@ c1.init({
 3  |position|插件显示位置|1(触发器下方)|2(屏幕底部屏幕的一半)|
 4  |event  |-|-|-|-
 
-### 源码简述
+### 源码结构
 ```javascript
 ;(function (win) {
   //插件样式区
@@ -107,5 +107,5 @@ c1.init({
   
   //插件注册
   win["c1"] = plugin;
-})(window)
+})(window);
 ```
