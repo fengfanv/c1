@@ -8,13 +8,13 @@
 
 ##### 1、引入插件
 
-```
+```javascript
 <script src="../js/c1.js"></script>
 ```
 
 ##### 2、引入地址数据(不使用地址选择插件可不引用)
 
-```
+```javascript
 <script src="../js/addressData.js"></script>
 ```
 
@@ -50,7 +50,7 @@ c1.init({
 4  |event  |-|-|-|-
 
 ### 源码简述
-```
+```javascript
 ;(function (win) {
   //插件样式区
   var styleContent = "...";
